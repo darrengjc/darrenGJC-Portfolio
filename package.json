@@ -1,0 +1,33 @@
+{
+  "name": "darrengjc-portfolio",
+  "version": "1.0.0",
+  "description": "Darren's Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Darren Goh",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.2.8",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "three": "^0.138.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.0",
+    "prettier": "^2.6.0"
+  }
+}
