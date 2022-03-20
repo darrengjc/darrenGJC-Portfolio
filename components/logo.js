@@ -20,20 +20,21 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const bearImg = `/images/bear.png`
 
   return (
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          <Image src={bearImg} width={50} height={50} alt="logo" />
           <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            //color mode switch, font color switch
+            color={useColorModeValue('gray.800', 'blue.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
           >
-            Takuya Matsuyama
+            Darren Goh
           </Text>
         </LogoBox>
       </a>
