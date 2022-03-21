@@ -28,18 +28,26 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container
+    maxW="container.md"
+    >
       <Box
         borderRadius="full"
         mb={6}
         p={4}
         textAlign="center"
         bg={useColorModeValue('#FFFFE1', '#ABD3DB')}
+        
       >
         Hi there, I&apos;m an aspiring developer from Singapore!
       </Box>
 
-      <Box display={{ md: 'flex' }}>
+      <Box 
+      display={{ md: 'flex' }}
+      boxShadow='xl' 
+      p='4' 
+      rounded={'md'} 
+      mb='10'>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Darren Goh
@@ -79,16 +87,17 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I'm a student from University of London - Goldsmiths, in affiliation with Singapore Institute of Management. Currently, I'm undertaking a
-          degree in Computer Science - Machine Learning and Artificial Intelligence. My passion 
-          includes app development and photography. 
+          degree in Computer Science - Machine Learning and Artificial Intelligence. 
           
           <Paragraph>In my polytechnic days, I was a Business Management student specializing in Supply Chain and International Strategies
           but decided to jump industries after a taste of coding. There are two things I love outside of my workspace: my dogs and photography.
-          If you'd like to see my other passion:{' '}
-          <Link href="https://www.instagram.com/darren_graphy/" isExternal>
-            <Link>Instagram</Link>
-          </Link>.
+
+          Take a peek:{' '}
+            <Link href="https://www.instagram.com/darren_graphy/" isExternal>
+              <Link>Instagram</Link>
+            </Link>.
           </Paragraph>
+          
           
         </Paragraph>
         <Box align="center" my={4}>
@@ -121,7 +130,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+         Things I ♥
         </Heading>
         <Paragraph>
             Music,{' '}
@@ -135,7 +144,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Find me @
         </Heading>
         <List>
           <ListItem>

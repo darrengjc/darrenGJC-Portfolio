@@ -51,7 +51,7 @@ const Navbar = props => {
     >
       <Container
         display="flex"
-        p={2}
+        p={3}
         maxW="container.md"
         wrap="wrap"
         align="center"
@@ -69,13 +69,10 @@ const Navbar = props => {
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 4, md: -4 }}
         >
           <LinkItem href="/works" path={path}>
             Works
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -87,7 +84,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            Github
           </LinkItem>
         </Stack>
 
@@ -104,16 +101,17 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>Home</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
+                  target="_blank"
                   href="https://github.com/darrengjc"
                 >
-                  View Source
+                  To GitHub
                 </MenuItem>
               </MenuList>
             </Menu>

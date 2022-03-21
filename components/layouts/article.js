@@ -16,11 +16,12 @@ const Layout = ({ children, title }) => (
     variants={variants}
     transition={{ duration: 0.4, type: 'easeInOut' }}
     style={{ position: 'relative' }}
+    //display ={{lg:'flex'}}
   >
     <>
       {title && (
         <Head>
-          <title>{title} - Takuya Matsuyama</title>
+          <title>{title} - Darren Goh</title>
           <meta name="twitter:title" content={title} />
           <meta property="og:title" content={title} />
         </Head>

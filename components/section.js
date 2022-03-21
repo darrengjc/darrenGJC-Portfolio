@@ -14,6 +14,7 @@ const Section = ({ children, delay = 0 }) => (
     transition={{ duration: 0.8, delay }}
     mb={6}
   >
+    
     {children}
   </StyledDiv>
 )
