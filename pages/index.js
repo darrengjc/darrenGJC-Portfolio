@@ -30,11 +30,11 @@ const Home = () => (
   <Layout>
     <Container>
       <Box
-        borderRadius="lg"
+        borderRadius="full"
         mb={6}
-        p={3}
+        p={4}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('#FFFFE1', '#ABD3DB')}
       >
         Hi there, I&apos;m an aspiring developer from Singapore!
       </Box>
@@ -42,9 +42,9 @@ const Home = () => (
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Darren Goh
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p> A Developing Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -54,7 +54,7 @@ const Home = () => (
         >
           <Box
             borderColor="whiteAlpha.800"
-            borderWidth={2}
+            borderWidth={3}
             borderStyle="solid"
             w="100px"
             h="100px"
@@ -63,7 +63,7 @@ const Home = () => (
             overflow='hidden'
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/profile.jpg"
               alt="Profile image"
               borderRadius='full'
               width="100%"
@@ -75,19 +75,21 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Know Me
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+          I'm a student from University of London - Goldsmiths, in affiliation with Singapore Institute of Management. Currently, I'm undertaking a
+          degree in Computer Science - Machine Learning and Artificial Intelligence. My passion 
+          includes app development and photography. 
+          
+          <Paragraph>In my polytechnic days, I was a Business Management student specializing in Supply Chain and International Strategies
+          but decided to jump industries after a taste of coding. There are two things I love outside of my workspace: my dogs and photography.
+          If you'd like to see my other passion:{' '}
+          <Link href="https://www.instagram.com/darren_graphy/" isExternal>
+            <Link>Instagram</Link>
+          </Link>.
+          </Paragraph>
+          
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -100,25 +102,20 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+         My Short Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1997</BioYear>
+          Born in Singapore.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2018</BioYear>
+          Achieved a Diploma in Business Management - Supply Chain and International Business from Nanyang Polytechnic.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>Now</BioYear>
+          Year 2 , Semester 2 student in Singapore Institute of Management - University of London (GoldSmiths). 
+          Undertaking a degree in Computer Science - Machine Learning and Artificial Intelligence.
         </BioSection>
       </Section>
 
@@ -127,15 +124,12 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
+            Music,{' '}
+          <Link href="https://500px.com/p/jhiachin" target="_blank">
             Photography
           </Link>
-          , Leica, Machine Learning
+          , Animals, 
+          Discovering More Interests
         </Paragraph>
       </Section>
 
@@ -145,52 +139,30 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/darrengjc" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @darrengjc
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://www.instagram.com/darren_graphy/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @darren_graphy
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -205,7 +177,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
         <Box align="center" my={4}>
           <NextLink href="/posts" scroll={false}>

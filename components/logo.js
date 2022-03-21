@@ -29,7 +29,7 @@ const Logo = () => {
           <Image src={bearImg} width={50} height={50} alt="logo" />
           <Text
             //color mode switch, font color switch
-            color={useColorModeValue('gray.800', 'blue.900')}
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
