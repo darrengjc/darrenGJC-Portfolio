@@ -188,13 +188,13 @@ const Home = () => (
           </GridItem>
         </SimpleGrid> */}
 
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <NextLink href="/posts" scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Popular posts
             </Button>
           </NextLink>
-        </Box>
+        </Box> */}
       </Section>
     </Container>
   </Layout>
