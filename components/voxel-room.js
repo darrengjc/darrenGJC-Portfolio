@@ -66,15 +66,18 @@ const VoxelRoom = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      // const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      // scene.add(ambientLight)
 
+      const ambientLight = new THREE.AmbientLight(0xffffff)
+      scene.add(ambientLight)
+        
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
       setControls(controls)
       
-      loadGLTFModel(scene, '/room.obj', {
+      loadGLTFModel(scene, 'OBJ/gaming room-0.obj', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
