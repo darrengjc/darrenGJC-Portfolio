@@ -22,9 +22,8 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="dj app" title="DJ App" thumbnail={thumbInkdrop}>
+            A Simple DJ Application - Mix and Play multiple audio tracks.
           </WorkGridItem>
         </Section>
         <Section>

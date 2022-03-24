@@ -53,7 +53,7 @@ const VoxelRoom = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.005 + 8.5
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -66,10 +66,7 @@ const VoxelRoom = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      // const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      // scene.add(ambientLight)
-
-      const ambientLight = new THREE.AmbientLight(0xffffff)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
       scene.add(ambientLight)
         
       const controls = new OrbitControls(camera, renderer.domElement)
