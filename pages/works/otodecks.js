@@ -5,18 +5,17 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="OtoDecks">
     <Container>
       <Title>
-        Inkdrop <Badge>2016-</Badge>
+        OtoDeck <Badge>A DJ Mixer Application</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $200k.
+        A simplistic DJ mixing application that allows you to load multiple files and adjust their various audio source settings.
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
+          <Meta>GitHub</Meta>
           <Link href="https://www.inkdrop.app/">
             https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
           </Link>

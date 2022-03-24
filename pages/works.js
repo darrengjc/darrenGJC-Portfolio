@@ -3,15 +3,11 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbOtodecks from '../public/images/works/otodecks.png'
+import thumbAngrybox from '../public/images/works/angryBox.png'
+import thumbAsteroidGame from '../public/images/works/asteroidGame.png'
+import thumbWaveGrid from '../public/images/works/wavegrid.png'
+
 
 const Works = () => (
   <Layout title="Works">
@@ -22,39 +18,38 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="dj app" title="DJ App" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="otodecks" title="OtoDecks" thumbnail={thumbOtodecks}>
             A Simple DJ Application - Mix and Play multiple audio tracks.
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+            id="angrybox"
+            title="AngryBox"
+            thumbnail={thumbAngrybox}
           >
-            Music recommendation app for iOS
+            Simple Angry Bird Clone but Boxes.
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            id="asteroidgame"
+            title="Asteroid Simple"
+            thumbnail={thumbAsteroidGame}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Simple version of an Asteroid Game with some twists.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="wavegrid" thumbnail={thumbWaveGrid} title="WaveGrid">
+            Interactive Display - Mouse controls a display art.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-
-      <Section delay={0.2}>
+ 
+    
+      {/* <Section delay={0.2}> *Collaboration section
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -108,7 +103,7 @@ const Works = () => (
             Windows
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Container>
   </Layout>
 )
