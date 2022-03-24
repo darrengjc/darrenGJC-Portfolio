@@ -73,8 +73,8 @@ const VoxelRoom = () => {
       controls.autoRotate = true
       controls.target = target
       setControls(controls)
-
-      loadGLTFModel(scene, '/dog.glb', {
+      
+      loadGLTFModel(scene, '/room.obj', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
@@ -122,7 +122,7 @@ const VoxelRoom = () => {
   }, [renderer, handleWindowResize])
 
   return (
-    <RoomContainer ref={refContainer}>{loading && < />}</RoomContainer>
+    <RoomContainer ref={refContainer}>{loading && <RoomSpinner />}</RoomContainer>
   )
 }
 
